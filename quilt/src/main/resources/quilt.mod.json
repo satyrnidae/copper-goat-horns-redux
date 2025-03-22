@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "copperhorns",
+    "version": "${version}",
+    "metadata": {
+      "name": "Copper Goat Horns",
+      "description": "Re-adds copper goat horns from the Bedrock Preview!",
+      "contributors": {
+        "Isabel Maskrey": "Author"
+      },
+      "icon": "assets/minecraft/textures/item/copper_goat_horn.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "init": [
+        "dev.satyrn.copperhorns.quilt.CHModQuilt"
+      ],
+      "client_init": [
+        "dev.satyrn.copperhorns.quilt.client.CHClientQuilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.19.2"
+      },
+      {
+        "id": "architectury",
+        "version": ">=6.6.92"
+      }
+    ]
+  },
+  "mixin": [
+    "copperhorns.mixins.json"
+  ]
+}

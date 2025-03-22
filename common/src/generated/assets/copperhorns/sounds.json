@@ -1,0 +1,272 @@
+{
+  "item.copper_goat_horn.bass.0": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/bass0",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_bass"
+  },
+  "item.copper_goat_horn.bass.1": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/bass1",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_bass"
+  },
+  "item.copper_goat_horn.bass.2": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/bass2",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_bass"
+  },
+  "item.copper_goat_horn.bass.3": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/bass3",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_bass"
+  },
+  "item.copper_goat_horn.bass.4": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/bass4",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_bass"
+  },
+  "item.copper_goat_horn.bass.5": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/bass5",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_bass"
+  },
+  "item.copper_goat_horn.bass.6": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/bass6",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_bass"
+  },
+  "item.copper_goat_horn.bass.7": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/bass7",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_bass"
+  },
+  "item.copper_goat_horn.bass.8": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/bass8",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_bass"
+  },
+  "item.copper_goat_horn.bass.9": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/bass9",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_bass"
+  },
+  "item.copper_goat_horn.harmony.0": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/harmony0",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_harmony"
+  },
+  "item.copper_goat_horn.harmony.1": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/harmony1",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_harmony"
+  },
+  "item.copper_goat_horn.harmony.2": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/harmony2",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_harmony"
+  },
+  "item.copper_goat_horn.harmony.3": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/harmony3",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_harmony"
+  },
+  "item.copper_goat_horn.harmony.4": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/harmony4",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_harmony"
+  },
+  "item.copper_goat_horn.harmony.5": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/harmony5",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_harmony"
+  },
+  "item.copper_goat_horn.harmony.6": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/harmony6",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_harmony"
+  },
+  "item.copper_goat_horn.harmony.7": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/harmony7",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_harmony"
+  },
+  "item.copper_goat_horn.harmony.8": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/harmony8",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_harmony"
+  },
+  "item.copper_goat_horn.harmony.9": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/harmony9",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_harmony"
+  },
+  "item.copper_goat_horn.melody.0": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/melody0",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_melody"
+  },
+  "item.copper_goat_horn.melody.1": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/melody1",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_melody"
+  },
+  "item.copper_goat_horn.melody.2": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/melody2",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_melody"
+  },
+  "item.copper_goat_horn.melody.3": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/melody3",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_melody"
+  },
+  "item.copper_goat_horn.melody.4": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/melody4",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_melody"
+  },
+  "item.copper_goat_horn.melody.5": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/melody5",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_melody"
+  },
+  "item.copper_goat_horn.melody.6": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/melody6",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_melody"
+  },
+  "item.copper_goat_horn.melody.7": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/melody7",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_melody"
+  },
+  "item.copper_goat_horn.melody.8": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/melody8",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_melody"
+  },
+  "item.copper_goat_horn.melody.9": {
+    "sounds": [
+      {
+        "name": "copperhorns:item/copper_goat_horn/melody9",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.item.copperhorns.copper_goat_horn.play_melody"
+  }
+}

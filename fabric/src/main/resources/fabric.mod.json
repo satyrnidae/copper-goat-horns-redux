@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "copperhorns",
+  "version": "${version}",
+  "name": "Copper Goat Horns",
+  "description": "Re-adds copper goat horns from the Bedrock Preview!",
+  "authors": [
+    "Isabel Maskrey"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/copperhorns/textures/item/copper_goat_horn.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.satyrn.copperhorns.fabric.CHModFabric"
+    ],
+    "client": [
+      "dev.satyrn.copperhorns.fabric.client.CHClientFabric"
+    ]
+  },
+  "mixins": [
+    "copperhorns.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.19.2",
+    "java": ">=17",
+    "architectury": ">=6.6.92",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
