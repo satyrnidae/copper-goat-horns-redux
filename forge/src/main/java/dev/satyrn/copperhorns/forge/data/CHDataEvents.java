@@ -8,11 +8,12 @@ import dev.satyrn.copperhorns.forge.data.providers.server.CHTagProvider;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import org.jetbrains.annotations.NotNull;
 
 @Mod.EventBusSubscriber(modid = CHModCommon.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CHDataEvents {
     @SubscribeEvent
-    public static void gatherData(GatherDataEvent event) {
+    public static void gatherData(final @NotNull GatherDataEvent event) {
         event.getGenerator()
                 .addProvider(event.includeServer(), new CHTagProvider.CHInstrumentTagProvider(event.getGenerator(),
                         event.getModContainer().getModId(), event.getExistingFileHelper()));

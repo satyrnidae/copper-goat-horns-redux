@@ -10,8 +10,9 @@ import net.minecraftforge.common.data.LanguageProvider;
 import org.jetbrains.annotations.NotNull;
 
 public class CHLanguageProvider extends LanguageProvider {
-    public CHLanguageProvider(DataGenerator gen, String modid) {
-        super(gen, modid, "en_us");
+    public CHLanguageProvider(final @NotNull DataGenerator gen,
+                              final @NotNull String modId) {
+        super(gen, modId, "en_us");
     }
 
     @Override
@@ -34,7 +35,8 @@ public class CHLanguageProvider extends LanguageProvider {
         this.add(Util.makeDescriptionId("subtitles.item", CHItems.COPPER_GOAT_HORN.getId()) + ".play_harmony", "Horn harmony plays");
     }
 
-    private void add(RegistrySupplier<Instrument> instrument, String tx) {
+    private void add(final @NotNull RegistrySupplier<Instrument> instrument,
+                     final @NotNull String tx) {
         this.add(Util.makeDescriptionId("instrument", instrument.getId()), tx);
     }
 

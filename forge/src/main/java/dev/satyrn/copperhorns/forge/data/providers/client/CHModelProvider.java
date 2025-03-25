@@ -8,13 +8,15 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import org.jetbrains.annotations.NotNull;
 
 public class CHModelProvider {
-
     public static class CHItemModelProvider extends ItemModelProvider {
 
-        public CHItemModelProvider(DataGenerator generator, String modid, ExistingFileHelper existingFileHelper) {
-            super(generator, modid, existingFileHelper);
+        public CHItemModelProvider(final @NotNull DataGenerator generator,
+                                   final @NotNull String modId,
+                                   final @NotNull ExistingFileHelper existingFileHelper) {
+            super(generator, modId, existingFileHelper);
         }
 
         @Override
@@ -68,6 +70,11 @@ public class CHModelProvider {
                     .model(tootingModel)
                     .end();
 
+        }
+
+        @Override
+        public @NotNull String getName() {
+            return "Copper Horns Model Provider";
         }
     }
 }

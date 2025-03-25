@@ -15,9 +15,9 @@ public class CHTagProvider {
 
     public static class CHInstrumentTagProvider extends TagsProvider<Instrument> {
 
-        public CHInstrumentTagProvider(DataGenerator arg,
-                                       String modId,
-                                       @Nullable ExistingFileHelper existingFileHelper) {
+        public CHInstrumentTagProvider(final @NotNull DataGenerator arg,
+                                       final @NotNull String modId,
+                                       final @NotNull ExistingFileHelper existingFileHelper) {
             super(arg, Registry.INSTRUMENT, modId, existingFileHelper);
         }
 

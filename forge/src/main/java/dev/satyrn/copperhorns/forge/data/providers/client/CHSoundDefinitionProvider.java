@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.common.data.SoundDefinition;
 import net.minecraftforge.common.data.SoundDefinitionsProvider;
+import org.jetbrains.annotations.NotNull;
 
 public class CHSoundDefinitionProvider extends SoundDefinitionsProvider {
     /**
@@ -18,7 +19,9 @@ public class CHSoundDefinitionProvider extends SoundDefinitionsProvider {
      * @param modId     The mod ID of the current mod.
      * @param helper    The existing file helper provided by the event you are initializing this provider in.
      */
-    protected CHSoundDefinitionProvider(DataGenerator generator, String modId, ExistingFileHelper helper) {
+    public CHSoundDefinitionProvider(final @NotNull DataGenerator generator,
+                                     final @NotNull String modId,
+                                     final @NotNull ExistingFileHelper helper) {
         super(generator, modId, helper);
     }
 
@@ -47,5 +50,10 @@ public class CHSoundDefinitionProvider extends SoundDefinitionsProvider {
                             new ResourceLocation(CHModCommon.MOD_ID, "item/copper_goat_horn/harmony" + i),
                             SoundDefinition.SoundType.SOUND).stream()));
         }
+    }
+
+    @Override
+    public @NotNull String getName() {
+        return "Copper Horns Sound Definitions Provider";
     }
 }
