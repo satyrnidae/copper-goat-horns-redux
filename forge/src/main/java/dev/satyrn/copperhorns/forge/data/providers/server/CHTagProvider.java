@@ -9,7 +9,6 @@ import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.world.item.Instrument;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 public class CHTagProvider {
 
