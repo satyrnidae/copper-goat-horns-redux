@@ -2,9 +2,9 @@ package dev.satyrn.copperhorns.fabric;
 
 import net.fabricmc.api.ModInitializer;
 
-import dev.satyrn.copperhorns.fabriclike.CHModFabricLike;
+import dev.satyrn.copperhorns.fabriclike.FabricLikeMod;
 
-public final class CHModFabric implements ModInitializer {
+public final class MainEntrypoint implements ModInitializer {
     @Override
     public void onInitialize() {
         // This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -12,6 +12,6 @@ public final class CHModFabric implements ModInitializer {
         // Proceed with mild caution.
 
         // Run the Fabric-like setup.
-        CHModFabricLike.init();
+        FabricLikeMod.init();
     }
 }

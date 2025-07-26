@@ -1,6 +1,6 @@
 package dev.satyrn.copperhorns.item;
 
-import dev.satyrn.copperhorns.data.CHTags;
+import dev.satyrn.copperhorns.data.ModInstrumentTags;
 import dev.satyrn.copperhorns.mixin.InstrumentItemAccessor;
 import net.minecraft.core.Holder;
 import net.minecraft.core.NonNullList;
@@ -20,22 +20,45 @@ import java.util.Optional;
 
 public class CopperHorn extends InstrumentItem {
     public CopperHorn(Properties properties) {
-        super(properties, CHTags.Instruments.COPPER_GOAT_HORN_MELODY);
+        super(properties, ModInstrumentTags.COPPER_GOAT_HORN_MELODY);
+    }
+
+    public static @NotNull ItemStack create(final @NotNull Item item,
+                                            final @NotNull Holder<Instrument> bass,
+                                            final @NotNull Holder<Instrument> melody,
+                                            final @NotNull Holder<Instrument> harmony) {
+        ItemStack itemStack = new ItemStack(item);
+        setSoundVariantIds(itemStack,
+                bass.unwrapKey().orElseThrow(() -> new IllegalStateException("Invalid Instrument")).location(),
+                melody.unwrapKey().orElseThrow(() -> new IllegalStateException("Invalid Instrument")).location(),
+                harmony.unwrapKey().orElseThrow(() -> new IllegalStateException("Invalid Instrument")).location());
+        return itemStack;
+    }
+
+    private static void setSoundVariantIds(final @NotNull ItemStack itemStack,
+                                           final @NotNull ResourceLocation bass,
+                                           final @NotNull ResourceLocation melody,
+                                           final @NotNull ResourceLocation harmony) {
+        CompoundTag compoundTag = itemStack.getOrCreateTag();
+        compoundTag.putString("instrument", melody.toString());
+        compoundTag.putString("bass", bass.toString());
+        compoundTag.putString("harmony", harmony.toString());
     }
 
     @Override
     public void fillItemCategory(final @NotNull CreativeModeTab creativeModeTab,
                                  final @NotNull NonNullList<ItemStack> nonNullList) {
         if (this.allowedIn(creativeModeTab)) {
-            var basses = Registry.INSTRUMENT.getTagOrEmpty(CHTags.Instruments.COPPER_GOAT_HORN_BASS).iterator();
-            var melodies = Registry.INSTRUMENT.getTagOrEmpty(CHTags.Instruments.COPPER_GOAT_HORN_MELODY).iterator();
-            var harmonies = Registry.INSTRUMENT.getTagOrEmpty(CHTags.Instruments.COPPER_GOAT_HORN_HARMONY).iterator();
+            // We use holder here as we want every entry in tags, not just the
+            var basses = Registry.INSTRUMENT.getTagOrEmpty(ModInstrumentTags.COPPER_GOAT_HORN_BASS).iterator();
+            var melodies = Registry.INSTRUMENT.getTagOrEmpty(ModInstrumentTags.COPPER_GOAT_HORN_MELODY).iterator();
+            var harmonies = Registry.INSTRUMENT.getTagOrEmpty(ModInstrumentTags.COPPER_GOAT_HORN_HARMONY).iterator();
 
             while (basses.hasNext() && melodies.hasNext() && harmonies.hasNext()) {
                 var bass = basses.next();
                 var melody = melodies.next();
                 var harmony = harmonies.next();
-                nonNullList.add(create(CHItems.COPPER_GOAT_HORN.get(), bass, melody, harmony));
+                nonNullList.add(create(ModItems.COPPER_GOAT_HORN.get(), bass, melody, harmony));
             }
         }
     }
@@ -75,32 +98,7 @@ public class CopperHorn extends InstrumentItem {
         }
 
         Iterator<Holder<Instrument>> iterator = Registry.INSTRUMENT.getTagOrEmpty(
-                CHTags.Instruments.COPPER_GOAT_HORN_MELODY).iterator();
+                ModInstrumentTags.COPPER_GOAT_HORN_MELODY).iterator();
         return iterator.hasNext() ? Optional.of(iterator.next()) : Optional.empty();
-    }
-
-    public static @NotNull ItemStack create(final @NotNull Item item,
-                                            final @NotNull Holder<Instrument> bass,
-                                            final @NotNull Holder<Instrument> melody,
-                                            final @NotNull Holder<Instrument> harmony) {
-        ItemStack itemStack = new ItemStack(item);
-        setSoundVariantIds(itemStack, bass, melody, harmony);
-        return itemStack;
-    }
-
-    private static void setSoundVariantIds(final @NotNull ItemStack itemStack,
-                                           final @NotNull Holder<Instrument> bass,
-                                           final @NotNull Holder<Instrument> melody,
-                                           final @NotNull Holder<Instrument> harmony) {
-        CompoundTag compoundTag = itemStack.getOrCreateTag();
-        compoundTag.putString("instrument",
-                (melody.unwrapKey().orElseThrow(() -> new IllegalStateException("Invalid instrument"))).location()
-                        .toString());
-        compoundTag.putString("bass",
-                (bass.unwrapKey().orElseThrow(() -> new IllegalStateException("Invalid instrument"))).location()
-                        .toString());
-        compoundTag.putString("harmony",
-                (harmony.unwrapKey().orElseThrow(() -> new IllegalStateException("Invalid instrument"))).location()
-                        .toString());
     }
 }

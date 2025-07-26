@@ -15,10 +15,10 @@
     "intermediate_mappings": "net.fabricmc:intermediary",
     "entrypoints": {
       "init": [
-        "dev.satyrn.copperhorns.quilt.CHModQuilt"
+        "dev.satyrn.copperhorns.quilt.InitEntrypoint"
       ],
       "client_init": [
-        "dev.satyrn.copperhorns.quilt.client.CHClientQuilt"
+        "dev.satyrn.copperhorns.quilt.client.ClientInitEntrypoint"
       ]
     },
     "depends": [

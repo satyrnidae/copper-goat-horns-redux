@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "dev.satyrn.copperhorns.fabric.CHModFabric"
+      "dev.satyrn.copperhorns.fabric.MainEntrypoint"
     ],
     "client": [
-      "dev.satyrn.copperhorns.fabric.client.CHClientFabric"
+      "dev.satyrn.copperhorns.fabric.client.ClientEntrypoint"
     ]
   },
   "mixins": [

@@ -10,5 +10,6 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 @Mixin(InstrumentItem.class)
 public interface InstrumentItemAccessor {
     @Invoker
-    static void invokePlay(Level level, Player player, Instrument instrument) {}
+    static void invokePlay(Level level, Player player, Instrument instrument) {
+    }
 }
